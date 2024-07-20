@@ -209,6 +209,7 @@
   padding: 3px 10px;
   font-size: 18px;
   font-variation-settings: "wght" var(--bold-font-weight);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .image-wrapper {
@@ -216,9 +217,8 @@
 }
 
 .card-image {
-  width: 100%;
-  border-top: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .image-text {
@@ -245,6 +245,7 @@
 }
 
 .card-description {
+  border-top: 2px solid var(--main-color);
   padding: 25px;
 }
 
