@@ -61,30 +61,6 @@
   -moz-filter: hue-rotate(180deg);
 }
 
-@keyframes arrow {
-  from {
-    left: 4px;
-  }
-}
-
-@keyframes heart_scale {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.5;
-  }
-}
-
-@keyframes sparks {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .page {
   color: var(--main-color);
   font-family: var(--main-font), sans-serif;
@@ -404,7 +380,7 @@
   transform-origin: left;
 }
 
-.button-save:hover{
+.button-save:hover {
   cursor: pointer;
 }
 
