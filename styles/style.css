@@ -44,7 +44,7 @@
 }
 
 .filter-way_around {
-  filter: grayscale(100%) blur(2x);
+  filter: grayscale(100%) blur(2px);
   -webkit-filter: grayscale(100%) blur(2px);
   -moz-filter: grayscale(100%) blur(2px);
 }
@@ -128,6 +128,11 @@
   line-height: 0.7;
 }
 
+.header__page-heading a {
+  text-decoration: none;
+  outline: none;
+}
+
 .page-subheading {
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
 }
@@ -206,10 +211,10 @@
 }
 
 .card-heading {
+  border-bottom: 2px solid var(--main-color);
   padding: 3px 10px;
   font-size: 18px;
   font-variation-settings: "wght" var(--bold-font-weight);
-  border-bottom: 2px solid var(--main-color);
 }
 
 .image-wrapper {
@@ -217,7 +222,6 @@
 }
 
 .card-image {
-  block-size: 100%;
   inline-size: 100%;
 }
 
@@ -282,6 +286,10 @@
 .like-icon .main-body {
   fill: transparent;
   transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:hover {
+  cursor: pointer;
 }
 
 .like-icon:hover .core {
@@ -396,6 +404,10 @@
   transform-origin: left;
 }
 
+.button-save:hover{
+  cursor: pointer;
+}
+
 .button-save:hover::after {
   transform: scaleX(1);
 }
@@ -424,6 +436,7 @@
 #dialog-id:open .dialog-wrapper {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 #dialog-id button {
@@ -433,10 +446,7 @@
   color: var(--main-color);
   background-color: var(--bg-color);
   inline-size: 100%;
-}
-
-#dialog-id svg {
-  margin-right: 20px;
+  cursor: pointer;
 }
 
 #dialog-id::backdrop {
